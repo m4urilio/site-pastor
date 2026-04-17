@@ -1064,6 +1064,78 @@ h1, h2, h3, h4 {
 .cta-final__note i { font-size: 11px; }
 
 /* ============================================================
+   SEJA MANTENEDOR
+   ============================================================ */
+.mantenedor {
+  background: var(--navy);
+  padding: 120px 0 140px;
+  position: relative;
+}
+.mantenedor__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.mantenedor__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.mantenedor__verse-ref {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0.7;
+}
+.mantenedor__verse {
+  font-size: clamp(18px, 2.5vw, 26px);
+  font-style: italic;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+  max-width: 500px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.mantenedor__title {
+  font-size: clamp(36px, 6vw, 72px);
+  font-weight: 900;
+  color: var(--white);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-top: 8px;
+}
+.mantenedor__subtitle {
+  font-size: clamp(13px, 2vw, 18px);
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.mantenedor__qr {
+  flex-shrink: 0;
+}
+.mantenedor__qr-img {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 16px;
+  background: white;
+  padding: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+@media (max-width: 640px) {
+  .mantenedor { padding: 80px 0 100px; }
+  .mantenedor__inner { gap: 40px; }
+}
+
+/* ============================================================
    FOOTER
    ============================================================ */
 .footer {
