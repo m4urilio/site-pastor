@@ -1153,6 +1153,168 @@ h1, h2, h3, h4 {
 }
 
 /* ============================================================
+   SEMINÁRIO INFO
+   ============================================================ */
+.seminario {
+  background: var(--navy);
+  padding: 120px 0 100px;
+}
+.seminario__beneficios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 80px;
+}
+.seminario__beneficio {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 32px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 20px;
+}
+.seminario__beneficio > i {
+  color: var(--gold);
+  font-size: 24px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.seminario__beneficio strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+.seminario__beneficio p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.8;
+  margin: 0;
+}
+.seminario__formatos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 72px;
+}
+.seminario__formato {
+  padding: 40px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,222,89,0.12);
+  border-radius: 20px;
+}
+.seminario__formato-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 6px;
+}
+.seminario__formato-header i {
+  color: var(--gold);
+  font-size: 22px;
+}
+.seminario__formato-header h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: -0.02em;
+}
+.seminario__formato-header h3 span {
+  color: var(--gold);
+}
+.seminario__formato-sub {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 24px;
+}
+.seminario__formato-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.seminario__formato-list li {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.7;
+  padding-left: 16px;
+  position: relative;
+}
+.seminario__formato-list li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: 700;
+}
+.seminario__investimento {
+  padding: 20px;
+  background: rgba(255,222,89,0.05);
+  border-radius: 12px;
+  border-left: 3px solid rgba(255,222,89,0.3);
+}
+.seminario__investimento strong {
+  display: block;
+  font-size: 13px;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+.seminario__investimento ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.seminario__investimento ul li {
+  font-size: 13px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.65;
+  padding-left: 14px;
+  position: relative;
+}
+.seminario__investimento ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+}
+.seminario__cta {
+  text-align: center;
+  padding: 60px 40px;
+  background: rgba(255,222,89,0.06);
+  border: 1px solid rgba(255,222,89,0.2);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.seminario__cta-label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+}
+.seminario__cta-title {
+  font-size: clamp(24px, 3vw, 40px);
+  font-weight: 900;
+  color: var(--white);
+  letter-spacing: -0.03em;
+}
+@media (max-width: 860px) {
+  .seminario__beneficios,
+  .seminario__formatos { grid-template-columns: 1fr; }
+  .seminario__formato { padding: 28px; }
+}
+
+/* ============================================================
    SEJA MANTENEDOR
    ============================================================ */
 .mantenedor {
