@@ -1067,9 +1067,15 @@ h1, h2, h3, h4 {
    SEJA MANTENEDOR
    ============================================================ */
 .mantenedor {
-  background: var(--navy);
+  background: var(--navy) url('../img/bg-mantenedor.png') center center / cover no-repeat;
   padding: 120px 0 140px;
   position: relative;
+}
+.mantenedor::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 3, 66, 0.72);
 }
 .mantenedor__inner {
   display: flex;
@@ -1078,6 +1084,8 @@ h1, h2, h3, h4 {
   gap: 80px;
   flex-wrap: wrap;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 .mantenedor__text {
   display: flex;
