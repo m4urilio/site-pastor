@@ -746,6 +746,8 @@ h1, h2, h3, h4 {
   gap: 80px;
   align-items: stretch;
 }
+.historia__inner--full { display: block; }
+.historia__inner--full .historia__content { max-width: 100%; }
 .historia__photo-col {
   flex: 0 0 420px;
   position: relative;
