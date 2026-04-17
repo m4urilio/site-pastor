@@ -1561,6 +1561,100 @@ h1, h2, h3, h4 {
 }
 
 /* ============================================================
+   IGREJAS ONDE MINISTRAMOS
+   ============================================================ */
+.igrejas {
+  padding: 100px 0 120px;
+  background: var(--navy-dark);
+}
+.igrejas__head { text-align: center; margin-bottom: 48px; }
+.igrejas__pretitle {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(255,222,89,0.1);
+  border: 1px solid rgba(255,222,89,0.3);
+  border-radius: 100px;
+  padding: 6px 18px;
+  margin-bottom: 20px;
+}
+.igrejas__title {
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+.igrejas__title span { color: var(--gold); }
+.igrejas__subtitle {
+  font-size: 1rem;
+  color: var(--gray-dim);
+}
+.igrejas__table-wrap {
+  overflow-x: auto;
+  border-radius: 16px;
+  border: 1px solid rgba(255,222,89,0.15);
+  background: rgba(15,5,80,0.6);
+}
+.igrejas__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  min-width: 680px;
+}
+.igrejas__table thead tr {
+  background: rgba(255,222,89,0.12);
+  border-bottom: 2px solid var(--gold);
+}
+.igrejas__table thead th {
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  white-space: nowrap;
+}
+.igrejas__table thead th:first-child { text-align: center; width: 48px; }
+.igrejas__table thead th:last-child { text-align: right; width: 80px; }
+.igrejas__table tbody tr {
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  transition: background var(--tr);
+}
+.igrejas__table tbody tr:hover { background: rgba(255,222,89,0.05); }
+.igrejas__table tbody td {
+  padding: 10px 16px;
+  color: rgba(255,255,255,0.88);
+  vertical-align: middle;
+}
+.igrejas__table tbody td:first-child {
+  text-align: center;
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+.igrejas__table tbody td:last-child {
+  text-align: right;
+  font-weight: 600;
+  color: var(--gold);
+  white-space: nowrap;
+}
+.igrejas__table tbody td.church-name { font-weight: 600; color: var(--white); }
+.igrejas__table tbody td.pastor-name { color: var(--gold-light); }
+.igrejas__table tbody td.phone { color: var(--gray-dim); font-size: 0.78rem; }
+.igrejas__note {
+  text-align: center;
+  margin-top: 28px;
+  font-size: 0.8rem;
+  color: var(--gray-dim);
+  font-style: italic;
+}
+
+/* ============================================================
    SCROLL REVEAL
    ============================================================ */
 [data-reveal] {
@@ -1610,4 +1704,6 @@ h1, h2, h3, h4 {
   .cta-final__btns .btn { width: 100%; justify-content: center; }
   .footer__inner { grid-template-columns: 1fr; }
   .footer__brand { grid-column: span 1; }
+  .igrejas__table { font-size: 0.74rem; }
+  .igrejas__table thead th, .igrejas__table tbody td { padding: 8px 10px; }
 }
