@@ -597,6 +597,19 @@ h1, h2, h3, h4 {
   line-height: 1.75;
 }
 
+/* Libertação intro */
+.libertacao__intro {
+  max-width: 700px;
+  margin: -32px auto 48px;
+  text-align: center;
+}
+.libertacao__intro p {
+  font-size: 18px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.8;
+  font-style: italic;
+}
+
 /* Curso */
 .curso {
   background: rgba(255,255,255,0.03);
@@ -628,6 +641,34 @@ h1, h2, h3, h4 {
   font-size: 16px;
   color: rgba(255,255,255,0.6);
   line-height: 1.8;
+}
+.curso__sub strong { color: var(--gold); }
+.curso__verse {
+  border-left: 3px solid var(--gold);
+  padding-left: 20px;
+  font-size: 17px;
+  font-style: italic;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.6;
+}
+.curso__verse span {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gold);
+  margin-top: 6px;
+  font-style: normal;
+  letter-spacing: 0.04em;
+}
+.curso__activation {
+  font-size: 16px;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 0.02em;
+}
+.curso__activation strong {
+  color: var(--gold);
+  font-size: 18px;
+  letter-spacing: 0.06em;
 }
 .curso__itens {
   display: grid;
@@ -1007,6 +1048,96 @@ h1, h2, h3, h4 {
   font-size: 13px;
   color: rgba(255,255,255,0.2);
   text-align: center;
+}
+
+/* ============================================================
+   HISTORIA EXTRA
+   ============================================================ */
+.historia__scripture {
+  margin: 20px 0;
+  padding: 18px 24px;
+  border-left: 3px solid var(--gold);
+  background: rgba(255,222,89,0.05);
+  border-radius: 0 12px 12px 0;
+  font-size: 15px;
+  font-style: italic;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+}
+.historia__scripture span {
+  display: block;
+  font-style: normal;
+  font-size: 13px;
+  color: var(--gold);
+  opacity: 0.7;
+  margin-top: 6px;
+}
+.historia__invite {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin: 28px 0;
+  padding: 24px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.07);
+}
+.historia__invite i {
+  color: var(--gold);
+  font-size: 22px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.historia__invite p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.75;
+  margin: 0;
+}
+.historia__text--legacy {
+  font-style: italic;
+  color: rgba(255,255,255,0.6);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 20px;
+  margin-top: 8px;
+}
+
+/* ============================================================
+   HISTORIA RESULTS
+   ============================================================ */
+.historia__results {
+  margin-top: 32px;
+  padding: 28px 32px;
+  background: rgba(255,222,89,0.06);
+  border: 1px solid rgba(255,222,89,0.15);
+  border-radius: 16px;
+}
+.historia__results-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0.8;
+  margin-bottom: 18px;
+}
+.historia__results-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.historia__results-list li {
+  font-size: 15px;
+  color: rgba(255,255,255,0.75);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.historia__results-list li i {
+  color: var(--gold);
+  font-size: 12px;
+  flex-shrink: 0;
 }
 
 /* ============================================================
